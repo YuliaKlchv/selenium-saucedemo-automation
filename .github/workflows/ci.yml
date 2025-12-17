@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2.2.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=YuliaKlchv_selenium-saucedemo-automation
+            -Dsonar.organization=yuliaklchv
