@@ -1,0 +1,20 @@
+# Selenium SauceDemo Automation
+
+This repository contains Selenium automation tests for the SauceDemo website, created as part of a Software Testing assignment.
+
+## Project Scope
+- Automated login test
+- Automated checkout form validation
+- Basic CI/CD integration using GitHub Actions
+- Static code analysis using SonarCloud
+
+## Tools Used
+- Python
+- Selenium WebDriver
+- GitHub Actions
+- SonarCloud
+
+## How to Run Tests Locally
+```bash
+python test_login.py
+python test_checkout_validation.py
